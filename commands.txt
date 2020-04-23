@@ -1,0 +1,12 @@
+terraform - list of potential commands
+terraform version - version of the currently installed terraform
+
+
+terraform init -> initializes by downloading the providers
+terraform plan -> look at the configuration files that are in the current working directory and also loads the variables if it finds .tfvars files in that directory
+terraform plan -out filename.tf -> specify file in which to store plan, it shows the plan and store this plan to reference when I want to actually create the resources
+terraform apply "plan_file_name" -> creates the specified resources in the plan_file_name
+terraform destroy -> looks at the state file what resources were created and destroys all of them
+
+terraform refresh
+terraform show
